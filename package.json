@@ -1,11 +1,10 @@
 {
-  "name": "cucumber-e2e-demo",
+  "name": "clarion-auto",
   "version": "1.0.0",
-  "description": "demo project for cucumber-e2e package",
-  "main": " ",
+  "description": "Clarion test automation",
   "scripts": {
-    "wd:update": "webdriver-manager-replacement update --versions.chrome=80.0.3987.0 --gecko=false",
-    "test": "protractor config/protractor.conf.js"
+    "wd:update": "webdriver-manager-replacement update --versions.chrome=89.0.4389.23 --gecko=false",
+    "test": "protractor config/protractor.conf.js --env dev --tags \"@debug\" --disableChecks"
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,9 @@
   },
   "homepage": "https://github.com/AlexGalichenko/cucumber-e2e-demo#readme",
   "dependencies": {
+    "@cucumber-e2e/credential-manager": "^0.1.1",
     "@cucumber-e2e/gherkin-parallel": "^0.3.2",
-    "@cucumber-e2e/memory": "^0.2.2",
+    "@cucumber-e2e/memory": "^0.3.0",
     "@cucumber-e2e/po": "^0.9.2",
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",

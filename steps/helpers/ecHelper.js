@@ -15,7 +15,7 @@ function ecHelper(element, validation, negate) {
         case "become clickable": return EC.elementToBeClickable(element);
         default: throw new Error("Wrong expected condition provided");
     }
-};
+}
 
 const ECOptions = {
     PRESENT: "present",

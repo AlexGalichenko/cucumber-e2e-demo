@@ -1,14 +1,11 @@
-const AbstractPageMap = require("@cucumber-e2e/po").PageMap;
-const GoogleHomePage = require("./pages/GoogleHomePage");
-const GoogleResultsPage = require("./pages/GoogleResultsPage");
-
+const { PageMap: AbstractPageMap } = require("@cucumber-e2e/po");
+const LoginPage = require("./pages/LoginPage");
 class PageMap extends AbstractPageMap {
 
     constructor() {
         super();
 
-        this.definePage("Google Home", "^.+google\.com", new GoogleHomePage());
-        this.definePage("Google Results", "^.+\/search", new GoogleResultsPage());
+        this.definePage("Login", "authorization.ping", new LoginPage());
     }
 
 }

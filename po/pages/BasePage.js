@@ -1,4 +1,4 @@
-const Page = require("@cucumber-e2e/po").ProtractorPage;
+const { ProtractorPage: Page } = require("@cucumber-e2e/po");
 
 class BasePage extends Page {
 
